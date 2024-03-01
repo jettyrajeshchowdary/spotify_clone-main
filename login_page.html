@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Spotify</title>
+    <link rel="icon" href="/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+</head>
+<body>
+    <div class="header_section">
+        <!-- <a href="#"> -->
+            <img src="/logo.png" alt="logo">
+            <a href="">Spotify</a>
+        <!-- </a> -->
+        
+    </div>
+    <div class="main_content">
+        <div class="content">
+            <h1>Log in to Spotify</h1>
+            <div class="part1">
+                <div class="social_media">
+                    <img src="/google_logo.png" alt="google">
+                    <a href="">Continue with Google</a>
+                </div>
+                <div class="social_media">
+                    <img src="/facebook_logo2.png" alt="facebook">
+                    <a href="">Continue with Facebook</a>
+                </div>
+                <div class="social_media">
+                    <img src="/apple_logo.png" alt="Apple">
+                    <a href="">Continue with Apple</a>
+                </div>
+                <div class="social_media">
+                    <a href="" style="padding-left: 10%;">Continue with phone number</a>
+                </div>
+            </div>
+            <hr>
+            <form class="part2">
+                <div class="username">
+                    <label for="usrnm">Email or username</label><br>
+                    <input type="text" id="usrnm" placeholder="Email or username" name="usrnm" required>
+                </div>
+                <div class="username">
+                    <label for="paswrd">Password</label><br>
+                    <input type="password" id="paswrd" placeholder="Password" required >
+                    <i class="fa-regular fa-eye-slash"></i>
+                </div>
+                <div class="remember">
+                    <input type="checkbox" name="ck" id="rmbrme">
+                    <label for="rmbrme">Remember me</label>
+                </div>
+                <div class="login_button">
+                    <button>Log In</button>
+                </div>
+                <a href="#">Forgot your password?</a>
+            </form>
+            <hr>
+            <div class="last">
+                <p>Don't have an account?</p>
+                <a href="#">Sign up for Spotify</a>
+            </div>
+            <br><br><br>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,498 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow:hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+
+}
+.sidebar{
+    background-color:black;
+    width: 340px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+.main_content{
+    background-color:#121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    background-color:#121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+
+}
+.nav_option{
+    line-height:2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+.nav_option:hover{
+    opacity:1;
+}
+.nav_option i{
+    font-size: 1.25rem;
+}
+.nav_option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.library{
+    margin-top: 0.7rem;
+    border-radius: 1rem;
+    background-color: #121212;
+    height: 100%;
+    padding: 0rem 0.75rem;
+    overflow: scroll;
+
+}
+
+.option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    position: sticky;
+    top: 0;
+    z-index:8;  
+    background-color:#121212;
+    
+}
+.lib_option img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+}
+.icons i{
+    opacity: 0.8;
+    margin-right: 1rem;
+}
+.icons i:hover{
+    opacity: 1;
+}
+.box{
+    background-color:#232323;
+    max-height:11rem;
+    border-radius:0.5rem;
+    margin: 0.5rem 0 1.75rem 0;
+    padding: 0.5rem 1.25rem;
+}
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.box-p2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+.badges{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    /* margin-top: 0.5rem; */
+    height: 2rem;
+    width: fit-content;
+}
+.dark_badge{
+    background-color:black;
+    color: white;
+    border: solid 2px white;
+}
+.sticky_nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+.main_content .sticky_nav{
+    display: none;
+}
+
+.sticky_nav2{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index:0;
+}
+.sticky_nav3{
+    visibility: hidden;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    top: 0;
+    opacity: 8;
+    
+}
+.sticky_nav3 i{
+    font-size: 1.5rem;
+}
+.sticky_nav3 h1{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #1bd760;
+    /* text-shadow: 0px 0px 3px #1bd760; */
+    
+}
+.nav_icon img{
+    font-size: 2rem;
+    margin-left: 0.75rem;
+}
+.s_nav_option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+.sign_login{
+    width: 6.5rem;
+    height: 3.3rem;
+    border-radius: 2rem;
+    border: none;
+}
+.sign_login a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 0.7;
+}
+#s_up a{
+    color: white;
+    opacity: 0.7;
+    font-size: 1rem;
+    font-weight: bold;
+}
+#s_up a:hover{
+    opacity: 1 ;
+}
+.sign_login:hover{
+    transform: scale(1.05);
+}
+.sign_login a:hover{
+    opacity: 1;
+}
+.nav_item{
+    margin-right: 1rem ;
+}
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.card_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card_img{
+    width: 100%;
+    border-radius: 0.5rem;
+
+}
+.card_title{
+    font-weight: 600;
+}
+.card_info{
+    font-size: 0.85rem;
+    opacity: 0.5;
+}
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 96%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+.music_player{
+    background-color:black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+    opacity: 0.89;
+}
+.music_player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left_part{
+    width: 25%;
+ display: flex;
+ justify-content:flex-start;
+ align-items: center;
+ color: white;
+ gap: 0.9rem;
+}
+.music_album_img img{
+    height: 50px;
+    width: 50px;
+    border-radius: 0.25rem;
+}
+.music_icon{
+    display: flex;
+    gap: 10px;
+    
+}
+.music_icon img{
+    height: 1.25rem;
+    width: 1.25rem;
+    opacity:0.7;
+}
+.music_info{
+    line-height: 5px;
+}
+.music_info p{
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+.music_icon img:hover{
+    opacity:1;
+}
+.last_part{
+    width: 25%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    gap:0.1rem;
+    margin-right: 0rem;
+}
+.control_icon{
+    display: flex;
+    gap: 0.2rem;
+}
+.control_icon img{
+    height:2.5rem;
+    width: 2rem;
+    opacity: 0.7;
+}
+.volume_control{
+    margin-top:-0.37rem;
+}
+.volume_control input{
+    width: 70%;
+    height: 0.2rem;
+}
+.player{
+    width: 50%;
+}
+.player_control{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 0.4rem;
+    margin-bottom:0.4rem ;
+}
+.player-control-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+
+.player-control-icon:hover{
+    opacity:1;
+}
+.playback_bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress_bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+.progress_bar::-webkit-slider-runnable-track{
+    background-color:white;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progress_bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+.hkl{
+    opacity: 1;
+    height: 2rem;
+}
+.hkl:hover{
+    /* transition:ease-in 1ms; */
+    transform: scale(1.05);
+    cursor: pointer;
+}
+/* .card .play{
+    height:3.25rem;
+    width: 3.25rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    top: 35%;
+    left: 60%;
+    position:absolute;
+    /* opacity: 0; */
+    /* visibility: hidden; */
+
+} */
+/* .card .play:hover{
+    visibility: visible;
+} */
+.play i{
+    font-size: 2rem;
+    color: black;
+    position: relative;
+    top: 11px;
+    left: 16px;
+    
+}
+.control_icon img:hover{
+    opacity: 1.2;
+    cursor: pointer;
+}
+.card:hover{
+    background-color: #292929;
+    box-shadow: 0px 0px 2px 0.08px white;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.badges:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.s_nav_option i:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    
+}
+.nav_icon img:hover{
+    transform: scale(1.05);
+    border-radius: 50%;
+    background-color: rgb(5, 5, 5);
+    cursor: pointer;
+}
+.icons i:hover{
+    /* font-size: 1.2rem; */
+    border-radius: 50%;
+    cursor: pointer;
+    background-color:black;
+    transform: scale(1.05);
+}
+h2:hover{
+    text-shadow: 1px 1px 5px #1bd760;
+}
+::-webkit-scrollbar{
+    width: 0.3rem;
+}
+::-webkit-scrollbar-track{
+    background-color:transparent;
+    
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(0deg,black,white,#1bd760);
+    border-radius: 0.75rem;
+    background-clip: content-box;
+    border: 1px solid transparent;
+}
+.sticky_playbutton{
+    position: fixed;
+    height: 42px;
+    width: 50px;
+    top: 80%;
+    left: 85%;
+    visibility: hidden;
+    cursor: pointer;
+    
+
+    
+    
+}
+.sticky_playbutton i{
+    font-size: 1.5rem;
+    background-color:transparent;
+    color: #1bd760;
+    border: 1px solid grey;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 0.55rem;
+    box-shadow: 0px 0px 20px 2px #1bd760;
+}
+.sticky_playbutton i:hover{
+    transition: 0.5s linear;
+    transform:scale(1.05);
+}
+@media(max-width:600px){
+    .sidebar{
+        display: none;
+    }
+    .music_player{
+        visibility: hidden;
+        justify-content: space-around;
+    }
+    .sticky_playbutton{
+        visibility: visible;
+    }
+    .last_part{
+        display: none;
+    }
+    .music_info{
+        display: none;
+    }
+    .sticky_nav2{
+        display: none;
+    }
+    .sticky_nav3{
+        visibility: visible;
+    }
+     .card_container{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+

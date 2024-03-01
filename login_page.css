@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+    background-color: #181818;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.header_section{
+    width: 100%;
+    height: 6.1rem;
+    background-color: black;
+    padding-left: 3rem;
+    display:flex;
+    flex-direction: row;
+    gap: 0.35rem;
+    align-items: center;
+    position:fixed;
+    top: 0;
+}
+.header_section img{
+    height: 2.3rem;
+    width: 2.3rem;
+}
+.header_section a{
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.main_content{
+    width: 50%;
+    height: 100%;
+    background-color:black;
+    border-radius: 0.5rem;
+    margin: 8rem auto;
+    
+}
+.content{
+    margin-top:2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+}
+.part1{
+    width:100%;
+    margin-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:2rem;
+    
+}
+.social_media{
+    display: flex;
+    padding: 0.35rem 2.5rem 0.35rem 2rem;
+    align-items: center;
+    flex-direction:row;
+    justify-content:flex-start;
+    width:32%;
+    height: 2.2rem;
+    margin-bottom:0.5rem;
+    border: grey 0.1px solid;
+    border-radius: 2rem;
+}
+.social_media img{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 2rem;
+}
+.social_media a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.85rem;
+    font-weight:700;
+    
+}
+h1{
+    font-size: 2.75rem;
+    word-spacing:-0.3rem;
+}
+.part2{
+    margin-top: 1.5rem;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:2rem; 
+    gap: 2rem;  
+    /* border-top: 1px solid grey; */
+}
+.username{
+    /* margin-bottom: 0.75rem; */
+    padding: 0.35rem 2.5rem 0.35rem 2rem;
+    width:40%;
+    height: 2rem;
+    margin-bottom:1.5rem;
+    font-weight:600;
+
+}
+.username input{
+    width: 100%;
+    height:2rem ;
+    margin-top: 0.5rem;
+    background-color: #232323;
+    color: white;
+    border: 2px solid grey;
+    border-radius: 0.2rem;
+    padding:0.35rem 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+::placeholder{
+    color: white;
+}
+.username i{
+    position: relative;
+    top:-35px;
+    left: 93%;
+    font-size: 1.25rem;
+    opacity: 0.7;
+}
+.username i:hover{
+    opacity:1;
+    cursor: pointer;
+}
+.remember input{
+    
+    width: 1rem;
+    height: 1rem;
+    
+}
+.login_button button{
+    width: 276.8px;
+    height:2.7rem ;
+    text-align: center;
+    background-color: rgb(76, 241, 103);
+    border: none;
+    border-radius: 1.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.part2 a{
+    color: white;
+    text-decoration: none;
+}
+hr{
+    width: 80%; 
+    height: 1px;
+    background-color:#404040;  
+    border: none; 
+}
+/* .content p a{
+    color: white;
+    opacity: 1;
+} */
+.part2 a:hover{
+    color:rgb(76, 241, 103);
+}
+/* .content p a:hover{
+   
+} */
+.last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    margin-top: 2rem;
+    
+}
+.last p{
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+.last a{
+    /* text-decoration: none; */
+    color: white;
+}
+.last a:hover{
+    /* text-decoration: none; */
+    color:rgb(76, 241, 103);
+}
+.login_button button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.username input:hover{
+    border-color: white;
+}
+.social_media:hover{
+    border-color: white;
+    cursor: pointer;
+}
